@@ -1,0 +1,184 @@
+body{
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+
+}
+.menu{
+  display: grid;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  gap: 6rem;
+  margin: auto 0;
+}
+.bodyEscuro{
+  background-color: black;
+  color: white;
+}
+/*titulo animecart*/
+
+.menuTitulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.olho{
+  background-color: transparent;
+  background-image: url(/img/menu/olho-aberto.png);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  background-position: center;
+  height: 2rem;
+  width: 2rem;
+  transition: 0.5s;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.olho:hover{
+  transform: scale(1.5);
+
+}
+.olhoFechado{
+  background-image: url(/img/menu/olhos.png);
+}
+.olhoFechado:hover{
+ transform: scale(1.5);
+}
+
+.tituloMenu{
+  margin: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+/*div que segura as cartas de menu*/
+.menuPrincipal{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  height: 20rem;
+  padding-bottom: 6rem;
+}
+
+/*as cartas de menu*/
+.opcMenu{
+  width: 15rem;
+  height: 25rem;
+  background-color: black;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.opcMenu:hover{
+  width: 20rem;
+  height: 30rem;
+}
+/*conteudo dentro de opcMenu*/
+
+.tituloOpcMenu{
+  color: white;
+  text-transform: uppercase;
+
+}
+/*cada opcção inventario,girar,batalhar,upgrades*/
+
+.inventario{
+  background-image: url(/img/menu/bannerINventario.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.girar{
+  background-image: url(/img/menu/bannerGirar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.upgrade{
+  background-image: url(/img/menu/bannerupgrades.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.batalhar{
+  background-image: url(/img/menu/bannerBatalhar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+@media (max-width:1100px) {
+  .tituloMenu{
+    font-size: 2rem;
+  }
+  .menu{
+    gap: 4rem;
+  }
+  .menuTitulo{
+    height: 0;
+  }
+  .opcMenu{
+    height: 20rem;
+    width: 10rem;
+  }
+  .opcMenu:hover{
+    width: 15rem;
+    height: 25rem;
+  }
+  .tituloOpcMenu{
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width:800px) {
+
+  .tituloMenu{
+    font-size: 2rem;
+
+  }
+  .opcMenu{
+    height: 12rem;
+    width: 10rem;
+  }
+  .opcMenu:hover{
+    width: 12rem;
+    height: 17rem;
+  }
+  .tituloOpcMenu{
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width:400px) {
+  .tituloMenu{
+    font-size: 1rem;
+  }
+  .menu{
+    gap: 0;
+  }
+  .menuTitulo{
+    height: 0;
+  }
+  .opcMenu{
+    height: 6rem;
+    width: 5rem;
+  }
+  .opcMenu:hover{
+    width: 6rem;
+    height: 8rem;
+  }
+  .tituloOpcMenu{
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/inventario/styleInv.css">
+</head>
+<body>
+  <div class="opcaoInventarioFundo">
+    <div class="opcaoInventario">
+      <a href="/index.html" class="sair"></a>
+      <div class="telaIncEsquerda">
+        <h1>Inventario</h1>
+        <div class="opcoesRaridade">
+          <button onclick="mostrarTipoRaridade(5)" class="buttoeslabel opcaoLabelT">todos</button>
+          <button onclick="mostrarTipoRaridade(0)" class="buttoeslabel opcaoLabelM">mistica</button>
+          <button onclick="mostrarTipoRaridade(1)" class="buttoeslabel opcaoLabelL">léndaria</button>
+          <button onclick="mostrarTipoRaridade(2)" class="buttoeslabel opcaoLabelE">epica</button>
+          <button onclick="mostrarTipoRaridade(3)" class="buttoeslabel opcaoLabelR">raro</button>
+          <button onclick="mostrarTipoRaridade(4)" class="buttoeslabel opcaoLabelC">comum</button>
+        </div>
+        <div class="Cartas">
+        </div>
+      </div>
+      <div class="telaIncDireta">
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/script/scriptInv.js" defer></script>
+</body>
+</html>

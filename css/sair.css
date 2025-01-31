@@ -1,0 +1,17 @@
+.sair{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  background-image: url(/img/menu/sair.png);
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sair:hover{
+  transform: scale(1.5);
+}

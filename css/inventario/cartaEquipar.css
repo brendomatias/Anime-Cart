@@ -1,0 +1,158 @@
+.cartaequipar{
+  width: 5rem;
+  height: 7rem;
+  border-radius: 1rem;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: 0.2s;
+  transform: rotateY('180deg');
+}
+
+.cartasEquiparDiv{
+  width: 15rem;
+  height: 22rem;
+  border-radius: 1rem;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: 0.2s;
+  transform: rotateY('180deg');
+}
+
+.cartasDivequipar{
+  transition: 0.3s;
+
+}
+.cartasDivequipar:hover{
+  transform: scale(1.1);
+}
+
+.imcartaequipar{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  
+}
+
+
+.infequipar{
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
+  background:linear-gradient(to top,black,transparent);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.inffooterequipar{
+  display: grid;
+  gap: 1rem;
+  position: absolute;
+  width: 97.6%;
+  height: 5rem;
+  color: rgb(255, 255, 255);
+  background:linear-gradient(black,transparent);
+  justify-content: start;
+  align-items: start;
+  align-content: start;
+  font-size: 0.5rem;
+  text-align: start;
+  padding-left: 0.4rem;
+}
+.titulocartaequipar,.raridadelocartaequipar{
+  height: 0;
+  margin: 0;
+  color: white;
+}
+.iconInv{
+  margin: auto;
+  display: flex;
+}
+
+/* butoes de equipar cartas*/
+
+.equiparinv{
+  display: none;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+
+}
+
+.buttoesEquipar,.buttoesdesequipar{
+  background-color: black;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: solid black 1px;
+  cursor: pointer;
+}
+
+.buttoesEquipar:hover{
+  border: solid rgb(8, 250, 8) 1px;
+  color: rgb(8, 250, 8);
+}
+
+.desinv{
+  display: none;
+  justify-content: center;
+  padding-top: 0.5rem;
+  margin: auto;
+}
+
+.buttoesdesequipar:hover{
+  border: solid rgb(255, 0, 0) 1px;
+  color: rgb(255, 0, 0);
+
+
+}
+.iconInv{
+  display: flex;
+  height: 1rem;
+}
+
+@media (max-width:1100px) {
+  .cartasEquiparDiv{
+    width: 12rem;
+    height: 18rem;
+  }
+  .buttoesEquipar,.buttoesdesequipar{
+    font-size: 0.5rem;
+  }
+  .inffooterequipar{
+    font-size: 0.5rem;
+  }
+  .infequipar{
+    gap: 1rem;
+  }
+  
+}
+
+@media (max-width:800px) {
+  .cartasEquiparDiv{
+    width: 10rem;
+    height: 16rem;
+  }
+  .buttoesEquipar,.buttoesdesequipar{
+    font-size: 0.5rem;
+    padding: 0.8rem;
+  }
+  .inffooterequipar{
+    font-size: 0.1rem;
+  }
+  .infequipar{
+    gap: 1.4rem;
+    font-size: 0.6rem;
+  }
+  .titulocartaequipar,.raridadelocartaequipar{
+    font-size: 0.9rem;
+  }
+  
+}

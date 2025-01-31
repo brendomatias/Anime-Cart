@@ -1,0 +1,15 @@
+.Telaopcoes{
+  display: none;
+  position: relative;
+}
+
+.opcaoInventarioFundo{
+  background-image: url(/img/menu/bannerInvFundo.png);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
